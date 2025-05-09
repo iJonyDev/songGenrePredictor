@@ -1,0 +1,8 @@
+1. train_part_01.csv (50MB)
+2. train_part_02.csv (50MB)
+3. train_part_03.csv (50MB)
+
+Cada archivo contiene aproximadamente un tercio de los datos originales (alrededor de 1,870,205 líneas cada uno).
+
+Para combinar los archivos CSV en un solo archivo:
+head -n 1 train_part_01.csv > combined.csv && tail -n +2 train_part_01.csv train_part_02.csv train_part_03.csv >> train.csv
